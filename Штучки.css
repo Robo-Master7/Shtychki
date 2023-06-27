@@ -1,0 +1,57 @@
+.blok{
+    background-color: blueviolet;
+    width:40px;
+    height: 40px;
+    margin:20px;
+    border-radius: 5px;
+}
+
+.one{
+    transform: translate();
+    transition-duration: 0.4s;
+}
+
+.one:hover{
+    transform: translate(-10px, -15px);
+    transition-duration: 1s;
+}
+
+.two{
+    transform: rotate(450deg);
+    transition-duration: 0.4s;
+}
+
+.two:hover{
+    transform: rotate(450deg);
+    transition-duration: 1s;
+}
+
+.three{
+    transform: rotate(450deg) skew(51deg, -30deg);
+    transition-duration: 0.4s;
+}
+
+.three:hover{
+    transform: rotate(450deg) skew(51deg, -30deg);
+    transition-duration: 1s;
+}
+
+.four{
+    transform: scale(1.7);
+    transition-duration: 0.4s;
+}
+
+.four:hover{
+    transform: scale(1.7);
+    transition-duration: 1s;
+}
+
+.five{
+    transform: matrix(0,0,0,0,0,0);
+    transition-duration: 1s;
+}
+
+.five:hover{
+    transform: matrix(0,1,1,0,0,0);
+    transition-duration: 1s;
+}
