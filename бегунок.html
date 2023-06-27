@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset = "utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title></title>
+            <link href="бегунок.css" rel="stylesheet">
+        </head>
+        <body>
+            <div class="wr">
+                <label for="rangeInput">
+                    Сколько кодинов хочу я за стажировку
+                </label>
+                <output
+                id="amount"
+                name="amount"
+                for="rangeInput"
+                >0</output>
+                <input
+                type="range"
+                id="rangeInput"
+                name="rangeInput"
+                min="0"
+                max="500"
+                value="0"
+                oninput="amount.value=rangeInput.value + '/500'"
+                
+                >
+            </div>
+
+        </body>
+    </html>

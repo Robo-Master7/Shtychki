@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height:100%;
+}
+
+body{
+    margin:0;
+    display: grid;
+    place-items:center;
+    background-color: beige;
+    color:black
+}
+
+.wr{
+    display:grid ;
+    grid-template-columns: repeat(2,1fr);
+    gap:10px;
+}
+
+.label, output{
+    font-size: 18px;
+}
+
+.label{
+    color:rgba(0, 0, 0, 0.51);
+}
+
+input, input::-webkit-slider-thumb{
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width:360px;/*длина линии*/
+    height:6px;
+    border-radius: 3px;
+    background-color: blue;
+    outline:none;
+    cursor: pointer;
+}
+
+input::-webkit-slider-thumb{
+    width:15px;
+    height:16px;
+    border-radius: 5px;
+    background-color: rgb(214, 32, 32);
+}
+
+input::-webkit-slider-thumb:hover{
+    scale:1 0.8;
+}
